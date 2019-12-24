@@ -49,3 +49,5 @@ We've implemented interceptors to automatically log the API requests and respons
 ```js
 import axios from "./data/axiosInterceptor"
 ```
+
+In `./data/axiosInterceptor.js`, change the <Base_URL> to your backend server's base url. For example, `http://127.0.0.1:5000` for flask.
