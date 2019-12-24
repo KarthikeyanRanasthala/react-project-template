@@ -1,5 +1,32 @@
 # React Project Template
 
+## Instructions
+
+1. Clone the repository and change directory.
+
+```
+git clone https://github.com/KarthikeyanRanasthala/react-project-template && cd react-project-template
+```
+
+2. Install the necessary dependencies.
+
+```
+npm install
+```
+
+3. To start the development server, execute the following command.
+
+```
+npm start
+```
+
+4. To start the cypress test, execute the following command.
+
+```
+npm test
+```
+
+
 ## Dependencies
 
 - [Axios](https://github.com/axios/axios)
