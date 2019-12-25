@@ -2,10 +2,10 @@
 Cypress is “Fast, easy and reliable testing for anything that runs in a browser”. What you get with Cypress is a tool that makes it simple to set up, write, run, and debug tests.
 
 Cypress documentation : 
-### https://docs.cypress.io/guides/core-concepts/introduction-to-cypress.html#Cypress-Can-Be-Simple-Sometimes
+https://docs.cypress.io/guides/core-concepts/introduction-to-cypress.html#Cypress-Can-Be-Simple-Sometimes
 
 Video Link:
-### https://www.youtube.com/watch?v=KfTH2d-JZ6k&list=PL8GlT7H3xOcJbXNVnM6lTT3Fec8dikotY
+https://www.youtube.com/watch?v=KfTH2d-JZ6k&list=PL8GlT7H3xOcJbXNVnM6lTT3Fec8dikotY
 
 ## How To Write a Test Case In Cypress
 
