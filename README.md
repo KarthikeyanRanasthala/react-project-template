@@ -113,6 +113,18 @@ Once it's done, you've to import the reducer to `store.js` and use it in the `co
 
 Note: `Redux DevTools` is already setup for development and production. You can download the extension for your browser.
 
-# Using Cypress
+## Using Cypress
 
 Refer the detailed [documentation](docs/cypress.md).
+
+## General Guidelines
+
+1. Always de-structure your state & props before using them. Refer to [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment) for reference.
+
+2. Use propTypes for all your props to ensure type-checking. Refer to [React Docs](https://reactjs.org/docs/typechecking-with-proptypes.html) for reference.
+
+3. Async updates to redux must be handled through redux-thunk.
+
+4. Individual components should be styled using `css modules`. Refer to [CRA Docs](https://create-react-app.dev/docs/adding-a-css-modules-stylesheet/) for reference.
+
+5. Always handle error in promises with `catch` method.
