@@ -1,5 +1,4 @@
 import React from "react";
-import logo from "../data/images/logo.svg";
 import styles from "./Home.module.css";
 
 const Home = () => {
@@ -7,7 +6,7 @@ const Home = () => {
     <div className={styles.home}>
       <header className={styles.header}>
         <h1>Masai Open Source</h1>
-        <img src={logo} className={styles.reactLogo} alt="logo" />
+        <img src="/images/logo.svg" className={styles.reactLogo} alt="logo" />
         <p>
           Edit <code>src/routes/Home.js</code> and save to reload.
         </p>

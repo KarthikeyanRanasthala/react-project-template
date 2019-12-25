@@ -1,0 +1,10 @@
+.navLinks {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0px;
+}
+
+.navLinks > li {
+  list-style: none;
+  margin: 0px 10px;
+}
