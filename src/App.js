@@ -1,10 +1,9 @@
 import React from "react";
 import { Route } from "react-router-dom";
-
-import Home from "./routes/Home";
+import Routes from "./routes/Routes";
 
 function App() {
-  return <Route path="/" component={Home} />;
+  return <Route path="/" component={Routes} />;
 }
 
 export default App;
