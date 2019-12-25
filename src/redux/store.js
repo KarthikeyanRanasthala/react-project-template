@@ -1,7 +1,8 @@
 import { createStore, combineReducers, applyMiddleware, compose } from "redux";
 import thunk from "redux-thunk";
+import authReducer from "./authentication/reducer";
 
-const rootReducer = combineReducers({});
+const rootReducer = combineReducers({ authReducer });
 
 let composeEnhancers = compose;
 

@@ -1,25 +1,30 @@
 import React from "react";
 import { Route, Redirect, Link } from "react-router-dom";
+import { connect } from "react-redux";
+import PropTypes from "prop-types";
 import Dashboard from "./Dashboard/Dashboard";
 import Settings from "./Dashboard/Settings";
 import Profile from "./Dashboard/Profile";
 import Reports from "./Dashboard/Reports";
 
+import styles from "./DashboardRoutes.module.css";
+
 const DashboardRoutes = props => {
-  return props.isAuth ? (
+  const { isAuth } = props;
+  return isAuth ? (
     <>
-      <ul>
+      <ul class={styles.navLinks}>
         <li>
           <Link to="/">Dashboard</Link>
         </li>
         <li>
-          <Link to="/settings">SETTINGS</Link>
+          <Link to="/settings">Settings</Link>
         </li>
         <li>
-          <Link to="/profile">PROFILE</Link>
+          <Link to="/profile">Profile</Link>
         </li>
         <li>
-          <Link to="/reports">REPORTS</Link>
+          <Link to="/reports">Reports</Link>
         </li>
       </ul>
       <Route path="/" exact render={() => <Dashboard />} />
@@ -32,4 +37,12 @@ const DashboardRoutes = props => {
   );
 };
 
-export default DashboardRoutes;
+DashboardRoutes.propTypes = {
+  isAuth: PropTypes.bool.isRequired
+};
+
+const mapStateToProps = state => ({
+  isAuth: state.authReducer.isAuth
+});
+
+export default connect(mapStateToProps)(DashboardRoutes);
