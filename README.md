@@ -48,10 +48,10 @@ npm run build
 We've implemented interceptors to automatically log the API requests and responses through axios in development environment. So, you need to import the custom axios instance instead of directly importing from the axios package.
 
 ```js
-import axios from "./data/axiosInterceptor"
+import axios from "./utils/axiosInterceptor"
 ```
 
-In `./data/axiosInterceptor.js`, change the <Base_URL> to your backend server's base url. For example, `http://127.0.0.1:5000` for flask.
+In `./utils/axiosInterceptor.js`, change the <Base_URL> to your backend server's base url. For example, `http://127.0.0.1:5000` for flask.
 
 ## Using ErrorBoundary
 
@@ -112,3 +112,7 @@ A typical redux setup should have the following files in their respective folder
 Once it's done, you've to import the reducer to `store.js` and use it in the `combinaReducers`.
 
 Note: `Redux DevTools` is already setup for development and production. You can download the extension for your browser.
+
+# Using Cypress
+
+Refer the detailed [documentation](docs/cypress.md).
