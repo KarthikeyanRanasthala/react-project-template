@@ -137,6 +137,10 @@ Refer the detailed [documentation](docs/cypress.md).
 
 - [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 
+## Using oAuth
+
+Refer the detailed [documentation](docs/authentication.md)
+
 ## General Guidelines
 
 1. All the files having JSX should have an extension of `.jsx`

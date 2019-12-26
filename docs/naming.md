@@ -5,7 +5,7 @@
 - Follow PascalCase for component files and components.
 
 ```javascript
-ComponentName.js
+ComponentName.jsx
 
 class ComponentName
 
