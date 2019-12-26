@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React from "react";
 
 class ErrorBoundary extends React.Component {
@@ -8,25 +9,27 @@ class ErrorBoundary extends React.Component {
 
   componentDidCatch(error, errorInfo) {
     this.setState({
-      error: error,
-      errorInfo: errorInfo
+      error,
+      errorInfo
     });
   }
 
   render() {
-    if (this.state.errorInfo) {
+    const { errorInfo, error } = this.state;
+    const { children } = this.props;
+    if (errorInfo) {
       return (
         <div>
           <h2>Something went wrong.</h2>
           <details style={{ whiteSpace: "pre-wrap" }}>
-            {this.state.error && this.state.error.toString()}
+            {error && error.toString()}
             <br />
-            {this.state.errorInfo.componentStack}
+            {errorInfo.componentStack}
           </details>
         </div>
       );
     }
-    return this.props.children;
+    return children;
   }
 }
 
