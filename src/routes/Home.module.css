@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+
+.linksBar {
+  display: flex;
+  color: white;
+}
+.linksBar > * {
+  margin: 10px;
+}
