@@ -109,13 +109,26 @@ A typical redux setup should have the following files in their respective folder
 
 3. `reducer.js`, to manage your reducer's state. Like [this](src/redux/authentication/reducer.js).
 
-Once it's done, you've to import the reducer to `store.js` and use it in the `combinaReducers`.
+Once it's done, you've to import the reducer to `store.js` and use it in the `combineReducers`.
 
 Note: `Redux DevTools` is already setup for development and production. You can download the extension for your browser.
+
+## Using React Hooks
+
+Refer the detailed [documentation](https://reactjs.org/docs/hooks-intro.html).
+
+### React Router DOM with Hooks
+
+Refer the detailed [documentation](https://reacttraining.com/react-router/web/api/Hooks).
+
 
 ## Using Cypress
 
 Refer the detailed [documentation](docs/cypress.md).
+
+## Useful Visual Studio Code Extensions
+
+- [ES7 React/Redux/GraphQL/React-Native snippets](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets)
 
 ## General Guidelines
 
