@@ -82,7 +82,7 @@ You may wrap top-level route components to display a “Something went wrong” 
 
 ## Using PropTypes
 
-React has some built-in typechecking abilities. To run typechecking on the props for a component,you can assign the special `propTypes` property.
+React has some built-in type-checking abilities. To run type-checking on the props for a component, you can assign the special `propTypes` property.
 
 ```js
 import PropTypes from "prop-types";
