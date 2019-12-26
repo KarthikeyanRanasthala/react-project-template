@@ -6,34 +6,20 @@ import Dashboard from "./Dashboard/Dashboard";
 import Settings from "./Dashboard/Settings";
 import Profile from "./Dashboard/Profile";
 import Reports from "./Dashboard/Reports";
-
-import styles from "./DashboardRoutes.module.css";
+import NavBar from "./Dashboard/NavBar";
 
 const DashboardRoutes = props => {
   const { isAuth } = props;
   return isAuth ? (
     <>
-      <ul class={styles.navLinks}>
-        <li>
-          <Link to="/">Dashboard</Link>
-        </li>
-        <li>
-          <Link to="/settings">Settings</Link>
-        </li>
-        <li>
-          <Link to="/profile">Profile</Link>
-        </li>
-        <li>
-          <Link to="/reports">Reports</Link>
-        </li>
-      </ul>
-      <Route path="/" exact render={() => <Dashboard />} />
-      <Route path="/settings" render={() => <Settings />} />
-      <Route path="/profile" render={() => <Profile />} />
-      <Route path="/reports" render={() => <Reports />} />
+      <Route path="/dash" render={NavBar} />
+      <Route path="/dash" exact render={() => <Dashboard />} />
+      <Route path="/dash/settings" render={() => <Settings />} />
+      <Route path="/dash/profile" render={() => <Profile />} />
+      <Route path="/dash/reports" render={() => <Reports />} />
     </>
   ) : (
-    <Redirect to="/home" />
+    <Redirect to="/login" />
   );
 };
 
