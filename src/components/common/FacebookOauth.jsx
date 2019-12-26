@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import FacebookLogin from "react-facebook-login";
 
-export default class FacebookOauth extends Component {
+class FacebookOauth extends Component {
   facebookResponse = () => {};
 
   render() {
@@ -17,3 +17,5 @@ export default class FacebookOauth extends Component {
     );
   }
 }
+
+export default FacebookOauth;

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { GoogleLogin } from "react-google-login";
 
-export default class GoogleOauth extends Component {
+class GoogleOauth extends Component {
   googleResponse = () => {};
 
   render() {
@@ -19,3 +19,5 @@ export default class GoogleOauth extends Component {
     );
   }
 }
+
+export default GoogleOauth;

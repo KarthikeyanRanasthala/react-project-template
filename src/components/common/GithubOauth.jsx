@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import GitHubLogin from "react-github-login";
 
-export default class GithubOauth extends Component {
+class GithubOauth extends Component {
   githubResponse = () => {};
 
   render() {
@@ -17,3 +17,5 @@ export default class GithubOauth extends Component {
     );
   }
 }
+
+export default GithubOauth;
