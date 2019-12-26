@@ -11,8 +11,8 @@ export default class GoogleOauth extends Component {
           clientId={process.env.REACT_APP_GOOGLE_CLIENT_ID}
           onSuccess={this.googleResponse}
           onFailure={this.googleResponse}
-          cookiePolicy={"single_host_origin"}
-          uxMode={"popup"}
+          cookiePolicy="single_host_origin"
+          uxMode="popup"
           isSignedIn={false}
         />
       </div>
