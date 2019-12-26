@@ -139,14 +139,16 @@ Refer the detailed [documentation](docs/cypress.md).
 
 ## General Guidelines
 
-1. Always de-structure your state & props before using them. Refer to [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment) for reference.
+1. All the files having JSX should have an extension of `.jsx`
 
-2. Use propTypes for all your props to ensure type-checking. Refer to [React Docs](https://reactjs.org/docs/typechecking-with-proptypes.html) for reference.
+2. Always de-structure your state & props before using them. Refer to [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment) for reference.
 
-3. Async updates to redux must be handled through redux-thunk.
+3. Use propTypes for all your props to ensure type-checking. Refer to [React Docs](https://reactjs.org/docs/typechecking-with-proptypes.html) for reference.
 
-4. Individual components should be styled using `css modules`. Refer to [CRA Docs](https://create-react-app.dev/docs/adding-a-css-modules-stylesheet/) for reference.
+4. Async updates to redux must be handled through redux-thunk.
 
-5. Always handle error in promises with `catch` method.
+5. Individual components should be styled using `css modules`. Refer to [CRA Docs](https://create-react-app.dev/docs/adding-a-css-modules-stylesheet/) for reference.
 
-6. [Naming Conventions](https://github.com/KarthikeyanRanasthala/react-project-template/blob/master/docs/naming.md)
+6. Always handle error in promises with `catch` method.
+
+7. [Naming Conventions](https://github.com/KarthikeyanRanasthala/react-project-template/blob/master/docs/naming.md)
