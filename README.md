@@ -128,3 +128,5 @@ Refer the detailed [documentation](docs/cypress.md).
 4. Individual components should be styled using `css modules`. Refer to [CRA Docs](https://create-react-app.dev/docs/adding-a-css-modules-stylesheet/) for reference.
 
 5. Always handle error in promises with `catch` method.
+
+6. [Naming Conventions](https://github.com/KarthikeyanRanasthala/react-project-template/blob/master/docs/naming.md)
