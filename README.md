@@ -26,7 +26,6 @@ npm test
 npm run build
 ```
 
-
 ## Dependencies
 
 - [Axios](https://github.com/axios/axios)
@@ -42,20 +41,27 @@ npm run build
 - [Husky](https://github.com/typicode/husky)
 - [Lint Staged](https://github.com/okonet/lint-staged)
 - [Prettier](https://github.com/prettier/prettier)
+- [ESLint](https://eslint.org/)
+- [ESLint Airbnb Config](https://github.com/airbnb/javascript)
+- [ESLint Prettier Config](https://github.com/prettier/eslint-config-prettier#readme)
+- [ESLint Import Plugin](https://github.com/benmosher/eslint-plugin-import)
+- [ESLint JSX a11y Plugin](https://github.com/evcohen/eslint-plugin-jsx-a11y#readme)
+- [ESLint Prettier Plugin](https://github.com/prettier/eslint-plugin-prettier#readme)
+- [ESLint React Plugin](https://github.com/yannickcr/eslint-plugin-react)
 
 ## Using Axios
 
 We've implemented interceptors to automatically log the API requests and responses through axios in development environment. So, you need to import the custom axios instance instead of directly importing from the axios package.
 
 ```js
-import axios from "./utils/axiosInterceptor"
+import axios from "./utils/axiosInterceptor";
 ```
 
 In `./utils/axiosInterceptor.js`, change the <Base_URL> to your backend server's base url. For example, `http://127.0.0.1:5000` for flask.
 
 ## Using ErrorBoundary
 
-Error boundaries are React components that catch JavaScript errors anywhere in their child component tree, log those errors, and display a fallback UI instead of the component tree that crashed. 
+Error boundaries are React components that catch JavaScript errors anywhere in their child component tree, log those errors, and display a fallback UI instead of the component tree that crashed.
 
 ```js
 import ErrorBoundary from "../components/common/ErrorBoundary"
@@ -79,24 +85,22 @@ You may wrap top-level route components to display a “Something went wrong” 
 React has some built-in typechecking abilities. To run typechecking on the props for a component,you can assign the special `propTypes` property.
 
 ```js
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 
 class Greetings extends React.Component {
   constructor(props) {
-    super(props)
+    super(props);
   }
 
   render() {
-    const { name } = this.props 
-    return (
-      <h1>Hello, {name}</h1>
-    )
+    const { name } = this.props;
+    return <h1>Hello, {name}</h1>;
   }
-} 
+}
 
 Greeting.propTypes = {
   name: PropTypes.string
-}
+};
 ```
 
 ## Using Redux
@@ -121,7 +125,6 @@ Refer the detailed [documentation](https://reactjs.org/docs/hooks-intro.html).
 
 Refer the detailed [documentation](https://reacttraining.com/react-router/web/api/Hooks).
 
-
 ## Using Cypress
 
 Refer the detailed [documentation](docs/cypress.md).
@@ -129,6 +132,10 @@ Refer the detailed [documentation](docs/cypress.md).
 ## Useful Visual Studio Code Extensions
 
 - [ES7 React/Redux/GraphQL/React-Native snippets](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets)
+
+- [ESLint VSCode Plugin](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+
+- [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 
 ## General Guidelines
 
